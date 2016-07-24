@@ -3,16 +3,19 @@ __editor__ = "VahidMohsseni"
 
 
 class School:
-    def __init__(self, teachers_list, grades_list):
+    def __init__(self, name, teachers_list, grades_list):
+        self.name = name
         self.teachers = teachers_list
         self.grades = grades_list
 
 
 class Grades:
-    def __init__(self, name, grade_id):
+    def __init__(self, name, grade_id, courses_list, class_counter, time):
         self.name = name
         self.id = grade_id
-        self.courses_list = None
+        self.courses_list = courses_list
+        self.class_counter = class_counter
+        self.time = time
 
 
 class Course:
