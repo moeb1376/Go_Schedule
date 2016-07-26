@@ -2,6 +2,7 @@ __author__ = "moeb1376"
 __editor__ = "VahidMohsseni"
 
 
+# {sat:0,sun:2,...}
 class School:
     def __init__(self, name, teachers_list, grades_list):
         self.name = name
@@ -27,9 +28,10 @@ class Course:
 
 
 class Teacher:
-    def __init__(self, name, title, course_list, working_days, working_hours):
+    def __init__(self, name, grade, title, course_list, working_days, working_hours):
         self.name = name
+        self.grade = grade
         self.title = title  # Mr. or Mrs.
         self.course = course_list
-        self.working_days = working_days
+        self.working_days = working_days  # exp:[1,3,4]
         self.working_hours = working_hours
