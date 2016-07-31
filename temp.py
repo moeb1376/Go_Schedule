@@ -15,7 +15,6 @@ class Grades:
         self.name = name
         self.id = grade_id
         self.courses_list = courses_list
-        self.class_counter = class_counter
         self.time = time
 
 
@@ -30,8 +29,8 @@ class Course:
 class Teacher:
     def __init__(self, name, grade, title, course_list, working_days, working_hours):
         self.name = name
-        self.grade = grade
         self.title = title  # Mr. or Mrs.
+        self.grade = grade
         self.course = course_list
         self.working_days = working_days  # exp:[1,3,4]
         self.working_hours = working_hours

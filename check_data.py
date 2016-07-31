@@ -1,4 +1,6 @@
-import temp.py
+import temp
+
+__author__ = "moeb1376"
 
 
 def teacher_data(my_teacher):

@@ -27,7 +27,7 @@ teacher_counter = 1
 teacher_name_id_dic = {}
 
 
-def make_teacher(name, title, course_list, days, hours):
+def make_teacher(name, title, grade, course_list, days, hours):
     global teacher_counter
-    teacher_name_id_dic[teacher_counter] = temp.Teacher(name, title, course_list, days, hours)
+    teacher_name_id_dic[teacher_counter] = temp.Teacher(name, title, grade, course_list, days, hours)
     teacher_counter += 1
